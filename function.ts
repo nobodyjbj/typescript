@@ -1,33 +1,33 @@
 {
-    // // JavaScript 👎
-    // function jsAdd(num1, num2) {
-    //     return num1 + num2;
-    // }
+    // JavaScript 👎
+    function jsAdd(num1, num2) {
+        return num1 + num2;
+    }
 
-    // // TypeScript
-    // function tsAdd(num1: number, num2: number): number {
-    //     return num1 + num2;
-    // }
+    // TypeScript
+    function tsAdd(num1: number, num2: number): number {
+        return num1 + num2;
+    }
 
-    // // JavaScript 👎
-    // function jsFetchNum(id) {
-    //     // code ..
-    //     // code ..
-    //     // code ..
-    //     return new Promise((resolve, reject) => {
-    //         resolve(100);
-    //     });
-    // }
+    // JavaScript 👎
+    function jsFetchNum(id) {
+        // code ..
+        // code ..
+        // code ..
+        return new Promise((resolve, reject) => {
+            resolve(100);
+        });
+    }
 
-    // // TypeScript
-    // function tsFetchNum(id: string): Promise<number> {
-    //     // code ..
-    //     // code ..
-    //     // code ..
-    //     return new Promise((resolve, reject) => {
-    //         resolve(100);
-    //     });
-    // }
+    // TypeScript
+    function tsFetchNum(id: string): Promise<number> {
+        // code ..
+        // code ..
+        // code ..
+        return new Promise((resolve, reject) => {
+            resolve(100);
+        });
+    }
 
     // 함수 활용 팁!
     // JavaScript의 최신 문법은 당연히 TypeScript에서도 사용할 수 있다.
