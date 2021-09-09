@@ -9,7 +9,7 @@
     name = 'hi';
 
     // const : 변수 할당 후 수정할 수 없음
-    const age = 5;
+    const age2 = 5;
 
     /**
      * JavaScript
