@@ -7,7 +7,7 @@
     type Text = string; // 타입 선언
     const name: Text = 'june' // 텍스트 타입으로 변수 선언
     type Num = number;
-    const age: Text = '20'
+    const age: Text = '20';
 
     type Student = { // 객체 타입 선언
         name: string;
