@@ -1,4 +1,13 @@
 {
+    /**
+     * Class -> Object
+     * 클래스는 틀을 만드는 작업이다.
+     * 클래스는 멤버변수(property or fields)와 method(Behavior)로 구성한다.
+     * 
+     * TypeScript에도 기본 생성자를 꼭 생성해줘야 한다.
+     * Static method로 객체를 생성하는 방법도 가능하다.(자바에서는 정적 팩터리 메서드 패턴이라고 한다.)
+     */
+
     type CoffeeCup = {
         shots: number;
         hasMilk: boolean;

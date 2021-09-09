@@ -1,4 +1,8 @@
 {
+    /**
+     * 절차 지향의 코드
+     * 앞으로 점점 oop관점에서 해당코드를 수정해 보도록 한다.
+     */
     type CoffeeCup = {
         shots: number;
         hasMilk: boolean;
