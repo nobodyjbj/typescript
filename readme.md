@@ -16,8 +16,8 @@ Playground : 타입스크립트를 실습해볼 수 있는 에디터
 
 | program    | version |
 | ---------- | ------- |
-| node js    | 4.42    |
-| typescript | 4.42    |
+| node js    | 14.17.6 |
+| typescript | 4.4.2   |
 | javascript | ES6     |
 
 #### 사용 에디터
