@@ -3,33 +3,33 @@
  */
 
 type Position = {
-    x: number;
-    y: number;
-}
+	x: number;
+	y: number;
+};
 
 let position: Position = {
-    x: 0,
-    y: 0,
+	x: 0,
+	y: 0,
 };
 
 type Direction = 'up' | 'down' | 'left' | 'right';
 function move(direction: Direction) {
-    switch (direction) {
-        case 'up':
-            position.x += 1;
-            break;
-        case 'down':
-            position.x -= 1;
-            break;
-        case 'left':
-            position.y += 1;
-            break;
-        case 'right':
-            position.y -= 1;
-            break;
-        default:
-            throw new Error(`unknown direction : ${direction}`);
-    }
+	switch (direction) {
+		case 'up':
+			position.x += 1;
+			break;
+		case 'down':
+			position.x -= 1;
+			break;
+		case 'left':
+			position.y += 1;
+			break;
+		case 'right':
+			position.y -= 1;
+			break;
+		default:
+			throw new Error(`unknown direction : ${direction}`);
+	}
 }
 
 console.log(position); // { x: 0, y: 0}

@@ -29,7 +29,7 @@
 
 		fillCoffeeBeans(beans: number): void {
 			if (beans < 0) {
-				throw new Error("value for beans should be greater than 0");
+				throw new Error('value for beans should be greater than 0');
 			}
 
 			this.coffeeBeans += beans;
@@ -38,13 +38,13 @@
 		private grindBeans(shots: number): void {
 			console.log(`grinding beans for ${shots}`);
 			if (this.coffeeBeans < shots * CoffeeMachine.BEANS_GRAM_PER_SHOT) {
-				throw new Error("Not enough coffee beans!");
+				throw new Error('Not enough coffee beans!');
 			}
 			this.coffeeBeans -= shots * CoffeeMachine.BEANS_GRAM_PER_SHOT;
 		}
 
 		private preheat(): void {
-			console.log("heating up... 🔥");
+			console.log('heating up... 🔥');
 		}
 
 		private extract(shots: number): Coffee {
@@ -64,7 +64,7 @@
 		}
 
 		clean(): void {
-			console.log("cleanning the machine...");
+			console.log('cleanning the machine...');
 		}
 	}
 
@@ -78,7 +78,7 @@
 
 	class CheapMilkSteamer implements MilkFrother {
 		private steamMilk(): boolean {
-			console.log("Steaming som milk... 🥛");
+			console.log('Steaming som milk... 🥛');
 			return true;
 		}
 
@@ -92,7 +92,7 @@
 
 	class FancyMilkSteamer implements MilkFrother {
 		private steamMilk(): boolean {
-			console.log("Steaming som milk... 🥛");
+			console.log('Steaming som milk... 🥛');
 			return true;
 		}
 
@@ -106,7 +106,7 @@
 
 	class ColdMilkSteamer implements MilkFrother {
 		private steamMilk(): boolean {
-			console.log("Steaming som milk... 🥛");
+			console.log('Steaming som milk... 🥛');
 			return true;
 		}
 
@@ -126,7 +126,7 @@
 
 	class CandySugarMixer implements SugarProvider {
 		private getSuger(): boolean {
-			console.log("Getting som sugar from jar 🍬");
+			console.log('Getting som sugar from jar 🍬');
 			return true;
 		}
 
@@ -140,7 +140,7 @@
 
 	class SugarMixer implements SugarProvider {
 		private getSuger(): boolean {
-			console.log("Getting som sugar from jar 🍬");
+			console.log('Getting som sugar from jar 🍬');
 			return true;
 		}
 

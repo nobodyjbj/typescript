@@ -26,7 +26,7 @@
 
 		makeCoffee(shots: number): Coffee {
 			if (this.coffeeBeans < shots * CoffeeMaker.BEANS_GRAM_PER_SHOT) {
-				throw new Error("Not enough coffee beans!");
+				throw new Error('Not enough coffee beans!');
 			}
 
 			this.coffeeBeans -= shots * CoffeeMaker.BEANS_GRAM_PER_SHOT;

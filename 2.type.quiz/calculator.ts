@@ -5,20 +5,20 @@
 type Commend = 'add' | 'substract' | 'multiply' | 'divide' | 'remainder';
 
 function calculate(command: Commend, a: number, b: number): number {
-    switch (command) {
-        case 'add':
-            return a + b;
-        case 'substract':
-            return a - b;
-        case 'multiply':
-            return a * b;
-        case 'divide':
-            return a / b;
-        case 'remainder':
-            return a % b;
-        default:
-            throw new Error('unknown command');
-    }
+	switch (command) {
+		case 'add':
+			return a + b;
+		case 'substract':
+			return a - b;
+		case 'multiply':
+			return a * b;
+		case 'divide':
+			return a / b;
+		case 'remainder':
+			return a % b;
+		default:
+			throw new Error('unknown command');
+	}
 }
 
 console.log(calculate('add', 1, 3)); // 4

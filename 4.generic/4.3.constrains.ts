@@ -1,6 +1,6 @@
 {
 	/**
-	 *
+	 * Constratins: Generic에 조건을 주는 방법
 	 */
 	interface Employee {
 		pay(): void;
@@ -23,6 +23,7 @@
 	}
 
 	// 아래 함수와 같이 세부적인 타입을 인자로 받아서 추상적인 타입으로 리턴하는 함수는 만들면 안된다.
+	// 리턴타입을 interface로 만들면 안된다.
 	function payBad(employee: Employee): Employee {
 		employee.pay();
 		return employee;
@@ -43,18 +44,20 @@
 	const riumAfterPay = pay(rium);
 
 	const obj = {
-		name: "june",
+		name: 'june',
 		age: 10,
 	};
 
 	const obj2 = {
-		animal: "🐶",
+		animal: '🐶',
 	};
 
+	// extends keyof T : T 오브젝트 안의 키값 안에서 사용한다. 라는 뜻
 	function getValue<T, K extends keyof T>(obj: T, key: K): T[K] {
 		return obj[key];
 	}
 
-	console.log(getValue(obj, "name")); // june
-	console.log(getValue(obj, "age")); // 10
+	console.log(getValue(obj, 'name')); // june
+	console.log(getValue(obj, 'age')); // 10
+	console.log(getValue(obj2, 'animal')); // 🐶
 }

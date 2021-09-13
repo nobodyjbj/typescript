@@ -6,7 +6,7 @@
 	// bad 예제
 	function checkNotNullBadExample(args: number | null): number {
 		if (args == null) {
-			throw new Error("not valid number!");
+			throw new Error('not valid number!');
 		}
 
 		return args;
@@ -15,7 +15,7 @@
 	// 타입에 대해 안전하지 않은 예제, any사용 x
 	function checkNotNullAnyBadExample(args: any | null): any {
 		if (args == null) {
-			throw new Error("not valid number!");
+			throw new Error('not valid number!');
 		}
 
 		return args;
@@ -24,7 +24,7 @@
 	// Generic활용 예제
 	function checkNotNull<T>(args: T | null): T {
 		if (args == null) {
-			throw new Error("not valid number!");
+			throw new Error('not valid number!');
 		}
 
 		return args;

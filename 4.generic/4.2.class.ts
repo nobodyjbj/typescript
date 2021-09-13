@@ -25,13 +25,13 @@
 	either.left(); // 4
 	either.right(); // 5
 
-	const either2: Either<String, number> = new SimpleEither("TEST", 5);
+	const either2: Either<String, number> = new SimpleEither('TEST', 5);
 	either2.left(); // TEST
 	either2.right(); // 5
 
-	const either3: Either<String, Object> = new SimpleEither("TEST", {
+	const either3: Either<String, Object> = new SimpleEither('TEST', {
 		num: 1,
-		value: "TEST",
+		value: 'TEST',
 	});
 	console.log(either3.right());
 	either3.left(); // TEST

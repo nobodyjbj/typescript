@@ -1,6 +1,7 @@
 {
 	/**
 	 * LIFO : Last In First Out
+	 * of OOP
 	 */
 	type StackNode = {
 		readonly value: string;
@@ -25,7 +26,7 @@
 
 		push(value: string) {
 			if (this.size === this.capacity) {
-				throw new Error("Stack is full!");
+				throw new Error('Stack is full!');
 			}
 			const node: StackNode = { value, next: this.head };
 			this.head = node;
@@ -34,7 +35,7 @@
 
 		pop(): string {
 			if (this.head == null) {
-				throw new Error("Stack is empty!");
+				throw new Error('Stack is empty!');
 			}
 			const node = this.head;
 			this.head = node.next;
@@ -44,9 +45,9 @@
 	}
 
 	const stack = new StackImpl(10);
-	stack.push("1");
-	stack.push("2");
-	stack.push("3");
+	stack.push('1');
+	stack.push('2');
+	stack.push('3');
 	while (stack.size !== 0) {
 		console.log(stack.pop());
 	}

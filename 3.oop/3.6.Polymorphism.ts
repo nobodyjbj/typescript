@@ -28,7 +28,7 @@
 		// 커피콩을 채우기위한 함수
 		fillCoffeeBeans(beans: number): void {
 			if (beans < 0) {
-				throw new Error("value for beans should be greater than 0");
+				throw new Error('value for beans should be greater than 0');
 			}
 
 			this.coffeeBeans += beans;
@@ -37,13 +37,13 @@
 		private grindBeans(shots: number): void {
 			console.log(`grinding beans for ${shots}`);
 			if (this.coffeeBeans < shots * CoffeeMachine.BEANS_GRAM_PER_SHOT) {
-				throw new Error("Not enough coffee beans!");
+				throw new Error('Not enough coffee beans!');
 			}
 			this.coffeeBeans -= shots * CoffeeMachine.BEANS_GRAM_PER_SHOT;
 		}
 
 		private preheat(): void {
-			console.log("heating up... 🔥");
+			console.log('heating up... 🔥');
 		}
 
 		private extract(shots: number): Coffee {
@@ -65,7 +65,7 @@
 		}
 
 		clean(): void {
-			console.log("cleanning the machine...");
+			console.log('cleanning the machine...');
 		}
 	}
 
@@ -76,7 +76,7 @@
 		}
 
 		private steamMilk(): void {
-			console.log("Steaming Milk... 🥛");
+			console.log('Steaming Milk... 🥛');
 		}
 
 		makeCoffee(shots: number): Coffee {
@@ -91,7 +91,7 @@
 
 	class SweetCoffeeMachine extends CoffeeMachine {
 		private addSugar(): void {
-			console.log("add sugar... 🌠");
+			console.log('add sugar... 🌠');
 		}
 
 		makeCoffee(shots: number): Coffee {
@@ -107,16 +107,16 @@
 
 	const machines: CoffeeMaker[] = [
 		new CoffeeMachine(16),
-		new CaffeLatteMachine(16, "1"),
+		new CaffeLatteMachine(16, '1'),
 		new SweetCoffeeMachine(16),
 		new CoffeeMachine(16),
-		new CaffeLatteMachine(16, "1"),
+		new CaffeLatteMachine(16, '1'),
 		new SweetCoffeeMachine(16),
 	];
 
 	machines.forEach((machine) => {
 		// machine 이라는 하나의 이름으로 여러가지 형태의 CoffeeMachine을 생성할 수 있다.
-		console.log("-----------------------------------");
+		console.log('-----------------------------------');
 		machine.makeCoffee(1);
 	});
 }

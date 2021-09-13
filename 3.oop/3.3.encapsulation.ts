@@ -31,7 +31,7 @@
 		// 커피콩을 채우기위한 함수
 		fillCoffeeBeans(beans: number) {
 			if (beans < 0) {
-				throw new Error("value for beans should be greater than 0");
+				throw new Error('value for beans should be greater than 0');
 			}
 
 			this.coffeeBeans += beans;
@@ -40,7 +40,7 @@
 		// 커피콩을 사용하기위한 함수
 		makeCoffee(shots: number): Coffee {
 			if (this.coffeeBeans < shots * CoffeeMaker.BEANS_GRAM_PER_SHOT) {
-				throw new Error("Not enough coffee beans!");
+				throw new Error('Not enough coffee beans!');
 			}
 
 			this.coffeeBeans -= shots * CoffeeMaker.BEANS_GRAM_PER_SHOT;
@@ -91,7 +91,7 @@
 		}
 	}
 
-	const user = new User("Steave", "Jobs");
+	const user = new User('Steave', 'Jobs');
 	// user.firstName = 'June';
 	// console.log(user.fullName); // getter를 호출할때는 함수형이 아니라, 변수형으로 호출한다.
 
