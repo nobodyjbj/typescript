@@ -26,14 +26,14 @@
 
 	// class ⭐️
 	class Position1 implements PositionType {
-		x: number = 1;
-		y: number = 1;
+		x = 1;
+		y = 1;
 	}
 
 	class Position2 implements PositionInterface {
-		x: number = 1;
-		y: number = 1;
-		z: number = 1;
+		x = 1;
+		y = 1;
+		z = 1;
 	}
 
 	// Extends ⭐️

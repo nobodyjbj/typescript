@@ -1,12 +1,12 @@
 {
 	/**
-	 * Type을 유기적으로 사용하는 예제
+	 * Index Type : 타입도 인덱스를 기반으로 해서 접근할 수 있다.
 	 */
 	const obj = {
 		name: 'june',
 	};
 	obj.name; // june
-	obj['name']; // june
+	obj['name']; // june -> 인덱스로 접근
 
 	type Animal = {
 		name: string;
