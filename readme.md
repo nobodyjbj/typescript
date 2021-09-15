@@ -64,6 +64,13 @@ Playground : 타입스크립트를 실습해볼 수 있는 에디터
   ```
 
 - tsconfig.json 생성 명령어
+
   ```
   $ tsc --init
+  ```
+
+- watch mode : ts파일을 실시간 js로 빌드
+  ```
+  $ tsc -w
+  $ tsc [filename] -w
   ```
